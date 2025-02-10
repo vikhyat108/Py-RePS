@@ -7,9 +7,9 @@ Py-RePS is a python equivalent of RePS code(https://github.com/matteozennaro/rep
 Latest version on https://github.com/vikhyat108/Py-RePS  
 
 ## Dependencies  
-Python package for CLASS i.e. "classy v3.2.1"  
-scipy 1.10.0  
-numpy 1.24.1  
+- Python package for CLASS i.e. "classy v3.2.1"  
+- scipy 1.10.0  
+- numpy 1.24.1  
 
 *****************************************
 
