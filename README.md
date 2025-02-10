@@ -1,7 +1,7 @@
 # Py-RePS  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%%%%%%%%%% Py-Reps - v. Feb 2025 %%%%%%%%%%%%  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
 Py-RePS is a python equivalent of RePS code(https://github.com/matteozennaro/reps)  
 Latest version on https://github.com/vikhyat108/Py-RePS  
