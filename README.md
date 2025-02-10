@@ -6,6 +6,11 @@
 Py-RePS is a python equivalent of RePS code(https://github.com/matteozennaro/reps)  
 Latest version on https://github.com/vikhyat108/Py-RePS  
 
+## Dependencies  
+Python package for CLASS i.e. "classy v3.2.1"  
+scipy 1.10.0  
+numpy 1.24.1  
+
 
 This repository contains two folders, `1-Fluid` and `2-Fluid`, which correspond to two different cosmological models:
 
