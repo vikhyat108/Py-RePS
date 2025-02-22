@@ -66,7 +66,7 @@ python3 py-reps_2F_class.py  ####  For 2-Fluid case
 
 
 
-After execution, the output files will be saved in the `1F_ICs` folder.
+After execution, the output files will be saved in the `1F_ICs` and `2F_ICs` folders respectively.
 
 ---
 For further modifications and parameter adjustments, refer to the parameter file within each respective folder.
