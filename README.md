@@ -39,11 +39,32 @@ Users can modify the cosmology using the provided parameter file.
 The `FF_GG` folder is used in this case to compute an integral required for the 2-Fluid model. The scripts for generating this file are inside the folder. However, users do not need to regenerate this file repeatedly—it can be generated once and used indefinitely, as it does not need to be updated for different cosmological models.
 
 ## Running the Code
-To execute the script, use the following command:
+If you have installed "classy v3.2.1" then you can directly use the following command:
 
 ```sh
-python3 py-reps_1F.py
+python3 py-reps_1F.py  ####  For 1-Fluid case
+
+python3 py-reps_2F.py  ####  For 2-Fluid case
 ```
+  
+  
+Otherwise if you are having trouble with classy, you can choose to run CLASS code manually, for doing this do the following:-  
+ - Copy CLASS code's folder inside the Py-RePS folder, where you have 1-Fluid and 2-Fluid folders(alternatively you can specify the path to your CLASS folder inside the py-reps_1F_class.py and py-reps_1F_class.py files respectively).
+ - Rename the CLASS code's folder as "CLASS".
+ - Now make two folders named "output_1F" and "output_2F" inside CLASS folder.  
+ - Finally, copy the files named "parameters_1F_class.ini" and "parameters_2F_class.ini" from 1-Fluid and 2-Fluid folders respectively to the CLASS folder.
+
+After doing this now run the command:
+
+```sh
+python3 py-reps_1F_class.py  ####  For 1-Fluid case
+
+python3 py-reps_2F_class.py  ####  For 2-Fluid case
+
+```
+ 
+
+
 
 After execution, the output files will be saved in the `1F_ICs` folder.
 
