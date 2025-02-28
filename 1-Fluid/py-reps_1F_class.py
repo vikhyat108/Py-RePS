@@ -173,7 +173,7 @@ print('T1 = ',T1)
 
 
 # Define the working directory
-working_dir = "Class"
+working_dir = str(Class)
 
 # Define the executable and parameter file
 executable = "./class"
