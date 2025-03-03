@@ -48,7 +48,7 @@ python3 py-reps_2F.py  ####  For 2-Fluid case
 ```
   
   
-Otherwise if you are having trouble with classy, you can choose to run CLASS(https://github.com/lesgourg/class_public) code manually, for doing this do the following:-  
+Otherwise if you are having trouble with classy, you can choose to run CLASS(https://github.com/lesgourg/class_public version---2.10) code manually, for doing this do the following:-  
  - Copy CLASS code's folder inside the Py-RePS folder, where you have 1-Fluid and 2-Fluid folders (alternatively you can specify the path to your CLASS folder inside the py-reps_1F_class.py and py-reps_2F_class.py files respectively).
  - Rename the CLASS code's folder as "CLASS".
  - Now make two folders named "output_1F" and "output_2F" inside CLASS folder.  
