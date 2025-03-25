@@ -1,0 +1,62 @@
+H0 = 67.11000000                      
+T_cmb = 2.7255                      
+Omega_b = 0.04900000                     
+N_ur = 3.046                      
+Omega_cdm = 0.2685                    
+Omega_dcdmdr = 0.0                   
+N_ncdm = 0                     
+#m_ncdm = 
+#Omega_ncdm = 0.0                       
+#T_ncdm = 
+, 1, 1
+Omega_k = 0.                      
+#Omega_Lambda = 0.7                     
+                        
+                        
+YHe = BBN                       
+recombination = RECFAST                   
+reio_parametrization = reio_camb                
+tau_reio = 0.09250000                    
+reionization_exponent = 1.5                   
+reionization_width = 0.5                  
+helium_fullreio_redshift = 3.5                  
+helium_fullreio_width = 0.5                   
+                                 
+output = mPk,mTk                    
+                        
+non linear = none
+
+modes = s                       
+                        
+lensing = no                      
+                        
+ic = ad                       
+gauge = synchronous                     
+                        
+P_k_ini type = analytic_Pk                  
+k_pivot = 0.05                      
+A_s = 2.13000000e-09                          
+n_s = 0.96240000                       
+alpha_s = 0.
+P_k_max_h/Mpc = 1.0                     
+z_pk = 0.0000,98.9000,99.0000,99.1000, 97.00000000000004, 97.08004333988939, 97.16015205667937, 97.24032620376768, 97.32056583459593, 97.40087100264911, 97.48124176145598, 97.56167816458901, 97.64218026566436, 97.72274811834224, 97.80338177632639, 97.88408129336456, 97.96484672324834, 98.04567811981322, 98.12657553693889, 98.2075390285488, 98.28856864861051, 98.36966445113569, 98.45082649018002, 98.53205481984361, 98.61334949427044, 98.69471056764888, 98.7761380942114, 98.8576321282351, 98.93919272404108, 99.02081993599494, 99.10251381850665, 99.18427442603058, 99.26610181306579, 99.34799603415563, 99.42995714388805, 99.51198519689561, 99.5940802478554, 99.67624235148945, 99.75847156256417, 99.84076793589084, 99.92313152632549, 100.00556238876887, 100.08806057816682, 100.17062614950981, 100.25325915783333, 100.33595965821776, 100.41872770578846, 100.501563355716, 100.58446666321582, 100.6674376835485, 100.75047647201976, 100.83358308398041, 100.91675757482676, 101.00000000000004
+                                              
+                        
+
+headers = yes                      
+format = class                      
+                        
+write background = no                     
+write thermodynamics = no                   
+write primordial = no                     
+write parameters = no                           
+write warnings = yes                   
+                        
+input_verbose = 1                     
+background_verbose = 1                    
+thermodynamics_verbose = 1                  
+perturbations_verbose = 1                   
+transfer_verbose = 1                    
+primordial_verbose = 1                                        
+lensing_verbose = 1                     
+output_verbose = 1                    
