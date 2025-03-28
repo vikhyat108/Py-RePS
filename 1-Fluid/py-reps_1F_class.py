@@ -360,6 +360,7 @@ print('Time taken to read CLASS code = ',T2)
 file_1 = open("./1F_ICs/Pm_0.txt","w")
 file_2 = open("./1F_ICs/Tk_0.txt","w")
 file_3 = open("./1F_ICs/fm_0.txt","w")
+file_4 = open("./1F_ICs/Pm_0_z=0.txt","w")
 
 norm = [0.]*(knum+1)
 delta_c = [0.]*(knum+1)
@@ -378,6 +379,8 @@ Dm = [0.]*(knum+1)
 file = open(Class/"output_1F/_z54_pk.dat", "r")
 pm_0 = np.genfromtxt(Class/"output_1F/_z54_pk.dat", usecols=1)
 
+for i in range(0,knum):
+	file_4.write('	'+str(k[i])+'	'+str(pm_0[i])+'\n')
 
 a_f = np.log(1./(1.+z_final))
 a_i = np.log(1./(1.+z_initial))
