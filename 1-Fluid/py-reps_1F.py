@@ -334,6 +334,7 @@ print('T2 = ',T2)
 file_1 = open("./1F_ICs/Pm_0.txt","w")
 file_2 = open("./1F_ICs/Tk_0.txt","w")
 file_3 = open("./1F_ICs/fm_0.txt","w")
+file_4 = open("./1F_ICs/Pm_0_z=0.txt","w")
 
 norm = [0.]*(knum+1)
 delta_c = [0.]*(knum+1)
@@ -353,6 +354,7 @@ pm_0 = [0.]*(knum+1)
 print(np.shape(k))
 for i in range(0,knum):
 	pm_0[i] = cosmo.pk(h*k[i],0.0)*h*h*h
+	file_4.write('	'+str(k[i])+'	'+str(pm_0[i])+'\n')
 
 
 a_f = np.log(1./(1.+z_final))
