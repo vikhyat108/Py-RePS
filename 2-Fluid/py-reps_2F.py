@@ -338,6 +338,7 @@ file_2 = open("./2F_ICs/Tk_99_30.txt","w")
 file_3 = open("./2F_ICs/fb_30.txt","w")
 file_4 = open("./2F_ICs/fc_30.txt","w")
 file_5 = open("./2F_ICs/fn_30.txt","w")
+file_6 = open("./2F_ICs/Pm_30_z=0.txt","w")
 
 norm = [0.]*(knum+1)
 delta_c = [0.]*(knum+1)
@@ -356,6 +357,8 @@ pm_0 = [0.]*(knum+1)
 
 for i in range(0,knum):
 	pm_0[i] = cosmo.pk(h*k[i],0.0)*h*h*h
+	file_6.write('	'+str(k[i])+'	'+str(pm_0[i])+'\n')
+	
 
 
 a_f = np.log(1./(1.+z_final))
