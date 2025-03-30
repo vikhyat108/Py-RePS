@@ -343,12 +343,12 @@ print('T2 = ',T2)
 
 
 
-file_1 = open("./2F_ICs/Pm_99_30.txt","w")
-file_2 = open("./2F_ICs/Tk_99_30.txt","w")
-file_3 = open("./2F_ICs/fb_30.txt","w")
-file_4 = open("./2F_ICs/fc_30.txt","w")
-file_5 = open("./2F_ICs/fn_30.txt","w")
-file_6 = open("./2F_ICs/Pm_30_z=0.txt","w")
+file_1 = open("./2F_ICs/Pm_99.txt","w")
+file_2 = open("./2F_ICs/Tk_99.txt","w")
+file_3 = open("./2F_ICs/fb.txt","w")
+file_4 = open("./2F_ICs/fc.txt","w")
+file_5 = open("./2F_ICs/fn.txt","w")
+file_6 = open("./2F_ICs/Pm_z=0.txt","w")
 
 norm = [0.]*(knum+1)
 delta_c = [0.]*(knum+1)
