@@ -9,20 +9,52 @@ import classy
 from classy import Class
 
 start_time = timeit.default_timer()
-h = 0.6711
+
+
+settings = {}
+
+# Load parameters from the text file
+with open('parameters_2F.txt', 'r') as file:
+    for line in file:
+        line = line.strip() 
+        if not line or line.startswith('#'): 
+            continue
+
+        if line.startswith("m_ncdm ="):
+            _, values = line.split("=")
+            first_value = values.split(",")[0].strip()  # Get the first value and remove spaces
+
+        try:
+            key, value = line.split('=', 1)
+            key = key.strip()
+            value = value.strip()
+
+            settings[key] = float(value) if value.replace('.', '', 1).isdigit() else value
+        except ValueError:
+            print(f"Skipping invalid line: {line}")
+
+
+cosmo = Class()
+cosmo.set(settings)
+cosmo.compute()
+
+
+
+h = settings["H0"]/100.
 w0 = -1.
 wa = 0.
-M_nu = 0.30
+N_nu = settings["N_ncdm"]
+M_nu = N_nu*float(first_value)
 On0 = M_nu/(93.14*h*h)
-Ob0 = 0.0490
-Oc0 = 0.2613483
+Ob0 = settings["Omega_b"]
+Oc0 = settings["Omega_cdm"]
 Ocb0 = Oc0 + Ob0
 Or0 = ( 2.469e-5 )/(h*h)
-Neff = 0.00641
+Neff = settings["N_ur"]
 OR0 = ( ( Neff*(7./8.)*pow(4./11.,4./3.) )+1.)*(Or0)
 
-Tcmb_0 = 2.7255
-N_nu = 3.0
+Tcmb_0 = settings["T_cmb"]
+
 kb = 8.617342e-5
 wrong_nu = 1
 Gamma_nu = 0.71611
@@ -157,28 +189,6 @@ def coupled_odes(t, y):
 T1 = timeit.default_timer() - start_time
 print('T1 = ',T1)
 
-lcdm_settings = {}
-
-# Load parameters from the text file
-with open('parameters_2F.txt', 'r') as file:
-    for line in file:
-        line = line.strip() 
-        if not line or line.startswith('#'): 
-            continue
-        
-        try:
-            key, value = line.split('=', 1)
-            key = key.strip()
-            value = value.strip()
-
-            lcdm_settings[key] = float(value) if value.replace('.', '', 1).isdigit() else value
-        except ValueError:
-            print(f"Skipping invalid line: {line}")
-
-
-cosmo = Class()
-cosmo.set(lcdm_settings)
-cosmo.compute()
 
 n = 20
 z_initial = 99.0
