@@ -382,10 +382,10 @@ T2 = timeit.default_timer() - start_time
 print('Time taken to read CLASS code = ',T2)
 
 
-file_1 = open("./1F_ICs/Pm_0.txt","w")
-file_2 = open("./1F_ICs/Tk_0.txt","w")
-file_3 = open("./1F_ICs/fm_0.txt","w")
-file_4 = open("./1F_ICs/Pm_0_z=0.txt","w")
+file_1 = open("./1F_ICs/Pm.txt","w")
+file_2 = open("./1F_ICs/Tk.txt","w")
+file_3 = open("./1F_ICs/fm.txt","w")
+file_4 = open("./1F_ICs/Pm_z=0.txt","w")
 
 norm = [0.]*(knum+1)
 delta_c = [0.]*(knum+1)
