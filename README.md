@@ -5,6 +5,8 @@
   
 Py-RePS (2510.18797) is a python equivalent of RePS code(https://github.com/matteozennaro/reps)  
 Latest version on https://github.com/vikhyat108/Py-RePS  
+RePS arXiv ID: arXiv:1605.05283
+Py-RePS arXiv ID: arXiv:2510.18797
 
 ## Dependencies  
 - Python package for CLASS i.e. "classy v3.2.1" (Can be installed using "pip install classy")  
